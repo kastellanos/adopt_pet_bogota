@@ -1,0 +1,500 @@
+
+.Cartwheel {
+  font-family: Cartwheel;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{
+  font-family: Cartwheel;
+
+}
+.c1{
+  background-color: #000000;
+  
+}
+.col-sm-8{
+  height: 100%;
+}
+.c2{
+	background-color: #FC9192;
+}
+.color1{
+background: #191919;
+  padding: 17px 9px ;
+
+}
+
+.caja-redes{
+
+  /*position: fixed;*/
+  right: 0px;
+  border-radius: 0.2em;
+}
+.caja-redes a {
+  text-align: center;
+  font-size: 30px;
+  float: right;
+  padding: 0.4em;
+  color: #8BD350;
+}
+
+.container-fluid{
+  background: #191919;
+
+}
+
+.cuerpo.container-fluid{
+  background-color: #A91EA9;
+
+}
+
+.container{
+  /*background-color: #302f30;*/
+  /*border-radius: 1em;
+    box-shadow: 1px 1px 1px 1px #262626;*/
+}
+
+
+.cc1{
+    background-color: #1b1b1b;
+     color:#a2dcf4;
+    border-radius: 5px;
+
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    
+}
+
+blockquote {
+font-family: Georgia, serif;
+font-size: 18px;
+font-style: italic;
+
+margin: 0.25em 0;
+padding: 0.25em 40px;
+line-height: 1.45;
+position: relative;
+color: #FFFFFF
+}
+
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 50px;
+position: absolute;
+left: 5px;
+top:  -10px;
+color: #FFFFFF;
+}
+.navbar-inverse{
+    background-color: #191919;
+}
+
+blockquote cite {
+color: #F3EBEB;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+header img{
+  width: 8em;
+}
+
+.noticias{
+  height: 25em;
+  /*border-style: dashed;*/
+}
+.noticias p{
+  border-style: inset;
+  border-spacing: 2em;
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+/*-----tabla-----------------*/
+/*
+.table-responsive{
+  float:right;
+}
+
+.table-responsive button{
+  margin: 3em;
+}*/
+
+
+/*-----tabla-----------------*/
+/*-----------------------------*/
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  /*background-color: #EDE9DF;*/
+  color: #000000;
+    background-size: cover;
+   /* -webkit-filter : blur(5px);*/
+
+}
+header{
+  color: #8BD350;
+
+}
+/*
+Pet result
+*/
+
+.pet-res{
+    /*float: left;
+    border-style: solid;
+    border-color: #24ff0b;
+    margin: 9px 7px;*/
+    width: 230px;
+    height: 290px;
+    /*position: relative;
+    padding: 12px;*/
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+  background: -moz-linear-gradient(top,  rgba(20,20,20,1) 0%, rgba(20,20,20,0.82) 2%, rgba(22,22,22,0.72) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(20,20,20,1)), color-stop(2%,rgba(20,20,20,0.82)), color-stop(100%,rgba(22,22,22,0.72))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(20,20,20,1) 0%,rgba(20,20,20,0.82) 2%,rgba(22,22,22,0.72) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(20,20,20,1) 0%,rgba(20,20,20,0.82) 2%,rgba(22,22,22,0.72) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(20,20,20,1) 0%,rgba(20,20,20,0.82) 2%,rgba(22,22,22,0.72) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(20,20,20,1) 0%,rgba(20,20,20,0.82) 2%,rgba(22,22,22,0.72) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#b8161616',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.pet-res a {
+    color:#080808;
+}
+.truncate {
+
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+}
+
+.rounded_corner1 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    padding: 10px;
+}
+.rounded_corner {
+
+    border-radius: 12px;
+    padding: 15px;
+    color:#000000;
+}
+.pet-res img{
+    vertical-align: middle;
+    margin-bottom: 10px;
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+
+}
+
+.article-frame-1{
+    width: 300px;
+    height: 300px;
+
+    background-color: #008900;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+.inverse-dropdown{
+  background-color: #222;
+  border-color: #080808;
+}
+.dropdown-menu>li>a{
+    color: #ffffff;
+
+}
+.dropdown-menu>li:hover{
+      color: #fff;
+      background-color: #000;
+    }
+
+/*elipsifi*/
+/* the wrapper */
+
+.artic-title{
+    color: #eeeeee;
+
+}
+.truncador {
+    color: #000000;
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 400px;
+  height: 15px*$1.4*6; /* Fallback for non-webkit */
+
+    margin: 0 auto;
+    margin-right: 10px;
+    margin-left: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ .global-search{
+    width: 80%;
+    background-color: #EDE9DF;
+     margin-top: 40px;
+     color: #000000;
+     margin-bottom: 20px;
+     border-radius: 12px;
+
+}
+ .searching-dogs{
+     background-color: #EDE9DF;
+     width: 70%;
+     color: #000000;
+     margin-bottom: 10px;
+ }
+.search-btn{
+    color: ;
+    margin-top: 20px;
+}
+/*elipsifi*/
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: #9FC98A;
+}
+
+.nombre, .mascota, .foto, .description-pet, .detail-pet, .info-general{
+    margin-top: 5px;
+     margin-bottom: 10px;
+}
+
+.navbar{
+    border:0px;
+}
+.opacity{
+   background-color:rgb(255,0,0);
+   opacity: 0.6;
+
+}
+
+.testing{
+    background: -moz-linear-gradient(top,  rgba(213,206,166,0.7) 0%, rgba(201,193,144,0.7) 40%, rgba(183,173,112,0.7) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(213,206,166,0.7)), color-stop(40%,rgba(201,193,144,0.7)), color-stop(100%,rgba(183,173,112,0.7))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(213,206,166,0.7) 0%,rgba(201,193,144,0.7) 40%,rgba(183,173,112,0.7) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(213,206,166,0.7) 0%,rgba(201,193,144,0.7) 40%,rgba(183,173,112,0.7) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(213,206,166,0.7) 0%,rgba(201,193,144,0.7) 40%,rgba(183,173,112,0.7) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(213,206,166,0.7) 0%,rgba(201,193,144,0.7) 40%,rgba(183,173,112,0.7) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d5cea6', endColorstr='#b3b7ad70',GradientType=0 ); /* IE6-9 */
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    font-size: 16px;
+}
+
+.breads>ul>li{
+    display: inline;
+}
+
+/*formulario
+*/
+/*--- estilos para los ul y li del formulario ---*/
+.contact_form ul {
+    width:100%;
+    list-style-type:none;
+	margin:0px;
+	padding:0px;
+
+}
+.contact_form li{
+	padding:12px;
+	border-bottom:1px solid #eee;
+	position:relative;
+}
+.contact_form label {
+    color: #555555;
+    display: inline-block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 3px;
+    padding: 3px;
+    width: 90px;
+}
+
+.contact_form input {
+    max-width: 220px;
+	height:20px;
+	width:100%;
+	padding:5px 8px;
+}
+.contact_form textarea {
+    max-width: 320px;
+	padding:8px;
+	width:100%;
+}
+.contact_form button {
+	margin-left:90px;
+}
+
+/*----- estilos visuales de los elementos --------*/
+
+.contact_form input, .contact_form textarea {
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:2px;
+	color: #888;
+	font-size: 12px;
+	padding-right:30px;
+	-moz-transition: padding .25s;
+	-webkit-transition: padding .25s;
+	-o-transition: padding .25s;
+	transition: padding .25s;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+	background: #fff;
+	border:1px solid #555;
+	box-shadow: 0 0 3px #aaa;
+	padding-right:80px;
+}
+
+/* === Estilos de Validacion === */
+
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}
+
+/* === Estilos del boton de Envio === */
+button.submit {
+    padding: 9px 17px;
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   line-height: 1;
+   color: #444;
+   border: none;
+   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+   background-image: -moz-linear-gradient(0% 100% 90deg, #BBBBBB, #FFFFFF);
+   background-color: #fff;
+   border: 1px solid #f1f1f1;
+   border-radius: 10px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+button.submit:hover {
+	opacity:.55;
+	cursor: pointer;
+	color: #fff;
+}
+button.submit:active {
+	border: 1px solid #222;
+	box-shadow: 0 0 10px 5px #444 inset;
+}
+
+/*formulario
+*/
+/*social*/
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+.icon{
+  display: inline-block;
+  position: relative;
+  color: #bdbdbd;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.47em;
+  line-height: 2em;
+  background-color: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 3px 0px #bdbdbd, 0px 3px 10px #bababa;
+  -webkit-transition:background-color 250ms ease 0s;
+  transition:background-color 250ms ease 0s;
+}
+
+.zocial-facebook{margin-left: -8px}
+
+.icon.facebook:hover{background-color: #4986c7;}
+.twitter:hover{background-color: #4cb6e8;}
+.linkedin:hover{background-color: #29a0cc;}
+.youtube:hover{background-color: #a32929;}
+.flickr:hover{background-color: #c257ad;}
+.email:hover{background-color: #d5b120;}
+
+a{
+  text-decoration: none;
+}
+
+.icon:hover{
+  color: #fff;
+  box-shadow: 0px 3px 0px #686868, 0px 3px 10px #7e7e7e;
+}
+
+.icon:active{
+  box-shadow: inset 0px 1px 4px #3d3d3d, 0px 0px 0px #bdbdbd;
+  top: 3px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    float:right;
+
+}
+@media (max-width: 300px) {
+    .wrapper {
+        float:left;
+    }
+}
+.special{
+    margin:0 auto;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+.top-links a{
+    color:#a2dcf4;
+
+    margin-right: 10px;
+}
+.top-links{
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}

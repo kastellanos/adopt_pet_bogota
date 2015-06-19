@@ -1,16 +1,12 @@
-from django.conf.urls import include, url,patterns
+from django.conf.urls import include, url
 from django.contrib import admin
-admin.autodiscover()
-
-import ada.views
-
-urlpatterns = patterns('',
+from django.conf.urls.static import static
+from django.conf import settings
+urlpatterns = [
     # Examples:
-    # url(r'^$', 'gettingstarted.views.home', name='home'),
+    # url(r'^$', 'Ada_project.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-
-    url(r'^$', ada.views.index, name='index'),
-    
+    url(r'^adopt_web/', include('adopt_web.urls',namespace="adopt_web")),
+    url(r'^ada/',include('ada.urls',namespace="ada")),
     url(r'^admin/', include(admin.site.urls)),
-
-)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
