@@ -1,4 +1,4 @@
-from django.conf.urls import include, url
+from django.conf.urls import include, url,patterns
 from django.contrib import admin
 admin.autodiscover()
 
@@ -9,8 +9,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'gettingstarted.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^$', hello.views.index, name='index'),
-    url(r'^db', hello.views.db, name='db'),
+    url(r'^$', ada.views.index, name='index'),
+    url(r'^db', ada.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
 
 )
