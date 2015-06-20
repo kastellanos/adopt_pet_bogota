@@ -7,3 +7,4 @@ SQLAlchemy==1.0.4
 whitenoise==1.0.6
 django-sitetree==1.4.0
 django-admin-bootstrapped==2.5.1
+pillow
