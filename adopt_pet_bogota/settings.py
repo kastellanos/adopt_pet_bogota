@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'bvmi^-5l1n%rw+chxwv_j2=9z86wn%a%8#nq(aqlj2=_i(@x=d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 
 
@@ -122,7 +122,7 @@ STATICFILES_DIRS = (
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-MEDIA_ROOT = BASE_DIR + "/pic_folder"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'ada/pic_folder')
 MEDIA_URL = os.path.join(BASE_DIR, 'picfolder/')
 STATIC_ROOT = 'staticfiles'
 
