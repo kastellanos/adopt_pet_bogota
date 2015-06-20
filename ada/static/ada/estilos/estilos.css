@@ -141,7 +141,7 @@ header img{
 
 body {
   /*background-color: #EDE9DF;*/
-  color: #000000;
+  color: #ffffff;
     background-size: cover;
    /* -webkit-filter : blur(5px);*/
 
@@ -180,7 +180,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', end
 }
 
 .pet-res a {
-    color:#080808;
+    color:#ffffff;
 }
 .truncate {
 
