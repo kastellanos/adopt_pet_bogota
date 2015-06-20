@@ -1,0 +1,27 @@
+{% extends "ada/base.html" %}
+
+{% block content %}
+    <div class="container testing">
+        <div class="row">
+            {% for article in lista %}
+                <div class="col-md-12">
+                <div class="artic-title"><h2 > {{ article.title }}</h2>
+                </div>
+                <div class="col-md-12">
+
+
+                        <div class="contenido">
+                            <article>
+
+                                {{ article.section }}
+
+                            </article>
+                        </div>
+
+
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

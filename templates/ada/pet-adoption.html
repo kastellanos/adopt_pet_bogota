@@ -1,0 +1,119 @@
+{% extends "ada/base.html" %}
+
+{% block content %}
+
+    <div class="container testing">
+
+
+        <div class="row">
+            <div class="col-md-12 find-pet">
+                <div role="tabpanel ">
+                    <div class="container global-search">
+                        <div class="row">
+                            <div class="col-md-12"><h4>Encuentra la mascota perfecta para adoptar</h4></div></p>
+                            <ul class="nav nav-tabs" roles="tablist">
+                                <li class="active" role="presentation"><a href="#seccion1" aria-controls="seccion1" data-toggle="tab" role="tab">Perros</a></li>
+                                <li role="presentation"><a href="#seccion1" aria-controls="seccion2" data-toggle="tab" role="tab">Gatos</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="seccion1">
+                                    <div class="container searching-dogs">
+                                        <form action="" class="">
+                                            <div class="form-group col-md-4">
+                                                <label for="edad">Edad:</label>
+                                                <select class="form-control" name="" id="edad">
+                                                    <option value="">Cualquiera</option>
+                                                    <option value="">Menor a un año</option>
+                                                    <option value="">Menor a dos años</option>
+                                                    <option value="">Menor a tres años</option>
+                                                    <option value="">Menor a cuatro años</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="size">Tamaño:</label>
+                                                <select class="form-control" name="" id="size">
+                                                    <option value="">Cualquiera</option>
+                                                    <option value="">Pequeño</option>
+                                                    <option value="">Mediano</option>
+                                                    <option value="">Grande</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="raza">Raza:</label>
+                                                <select class="form-control" name="" id="raza">
+                                                    <option value="">Cualquiera</option>
+                                                    <option value="">Pitbull</option>
+                                                    <option value="">Labrador</option>
+                                                    <option value="">Bull Terrier</option>
+                                                    <option value="">Pastor Aleman</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="sexo">Sexo:</label>
+                                                <select class="form-control" name="" id="sexo">
+                                                    <option value="">Cualquiera</option>
+                                                    <option value="">Macho</option>
+                                                    <option value="">Hembra</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="color">Color:</label>
+                                                <select class="form-control" name="" id="color">
+                                                    <option value="">Cualquiera</option>
+                                                    <option value="">Amarillo</option>
+                                                    <option value="">Cafe</option>
+                                                    <option value="">Negro</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="esterilizado">Esterilizado/Castrado:</label>
+                                                <select class="form-control" name="" id="esterilizado">
+                                                    <option value="">No importa</option>
+                                                    <option value="">Si</option>
+                                                    <option value="">No</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group  col-md-4 search-btn">
+                                                <button type="button" class="btn btn-success">Buscar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane " id="seccion2">
+                                    <h3>Gatos</h3>
+                                    <p>lorem ipsum dolor sit amet, consectetur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% for article in lista %}
+
+                <div class="col-md-5 special">
+
+
+                    <div class=" testing rounded_corner ">
+                        <div class="artic-title"><h2 > {{ article.title }}</h2>
+                        </div>
+                        <div class="contenido">
+                            <div class="truncador">
+
+                                {{ article.section }}
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}
