@@ -1,0 +1,32 @@
+{% extends "ada/base.html" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h3>Mascotas disponibles para adopcion inmediata</h3>
+            </div>
+            {% for pet in lista %}
+                <div class="col-xs-12 col-sm-12 col-md-3    ">
+               <div class="pet-res rounded_corner">
+                   <a href="{%  url 'ada:pet-info' pet.id %}" >
+                       <img src="{{ MEDIA_URL }}{{ pet.model_pic.url }}" width="200" height="200" alt=""/>
+                   </a>
+                   <p class="truncate">
+                       <a href="{%  url 'ada:pet-info' pet.id %} ">
+                            {{ pet.name_text }}
+                       </a>
+                   </p>
+                    <p class="truncate">
+                        <a href="#">
+                            Refugio Bogotapi
+                        </a>
+                    </p>
+
+               </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,164 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adopt a pet </title>
+    {% load sitetree %}
+
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href={% static "ada/utils/bootstrap.min.css"%} class="stylesheet">
+    <link rel="stylesheet" href={% static "ada/estilos/estilos.css" %} class="stylesheet">
+    <link rel="stylesheet" href={% static "ada/estilos/api.css" %} class="stylesheet">
+    <!-- <link rel="stylesheet" href="estilos/style.css" class="stylesheet"> -->
+
+
+    <link rel="stylesheet" href={% static "ada/estilos/fonts.css" %} class="stylesheet">
+    <script type="text/javascript" src={% static "ada/utils/jquery.min.js" %}></script>
+    <script src={% static "ada/utils/bootstrap.min.js"%}></script>
+
+    <link rel="stylesheet" type="text/css" href={% static "ada/css/font-awesome.css"%}>
+    <link rel="stylesheet" type="text/css" href={% static "ada/css/menu.css"%}>
+
+    <script type="text/javascript" src={%static "ada/js/jquery.js"%}></script>
+    <script type="text/javascript" src={%static "ada/js/function.js"%}></script>
+
+
+    <link rel="stylesheet" type="text/css" href={% static "ada/utils/MyFontsWebfontsKit/MyFontsWebfontsKit.css" %}>
+</head>
+
+
+
+<body>
+<header>
+    <div class="container-fluid">
+
+
+        <!-- <div class="header-image# col-md-4"><img src="resources/logo1.jpg" class="img-rounded" alt=""></div>  -->
+
+
+        <div class="color1 row">
+            <div class="col-md-5">
+                <h1>
+                    Adopta un amigo
+                </h1>
+                <blockquote>
+                    Encuentra la felicidad.
+                </blockquote>
+            </div>
+
+            {#                    <div class="pet1 col-md-2" >#}
+            {#                      <a href="#"><img src={% static "ada/utils/resources/perro.svg" %} alt=""></a>#}
+            {#                    </div>      #}
+            {#                    <div class="pet2 col-md-2">#}
+            {#                      <a href="#"><img src={% static "ada/utils/resources/gato.svg" %} alt=""></a>#}
+            {#                    </div>          #}
+            <div class="col-md-7">
+                <div class="wrapper">
+                <a class="icon facebook" href="#"><span class="zocial-facebook"></span></a>
+                <a class="icon twitter" href="#"><span class="zocial-twitter"></span></a>
+                <a class="icon linkedin" href="#"><span class="zocial-linkedin"></span></a>
+                <a class="icon youtube" href="#"><span class="zocial-youtube"></span></a>
+                <a class="icon flickr" href="#"><span class="zocial-flickr"></span></a>
+                <a class="icon email" href="#"><span class="zocial-email"></span></a>
+                    </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+</header>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/ada/">Inicio</a>
+                </li>
+                <li>
+                    <a href="{% url 'ada:pet-adoption' %}">Buscar mascota</a>
+                </li>
+                <li>
+                    <a href="{% url 'ada:process-adoption' %}">Proceso de Adopción</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Informate<span class="caret"></span></a>
+                    <ul class="dropdown-menu inverse-dropdown">
+                        <li>
+                            <a href="{% url 'ada:esterilizar' %}">¿Por qué estelirizar?</a>
+                        </li>
+                        <li>
+                            <a href="#">Tenencias responsables</a>
+                        </li>
+                        <li>
+                            <a href="#">Legislación animal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Formas de ayudar</a>
+                </li>
+                <li>
+                    <a href="{% url 'ada:contact-info' %}">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+
+
+
+<div class="container breads">{% sitetree_breadcrumbs from "ada"  %}</div>
+{% block content %}
+    <div class="cuerpo container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem eligendi pariatur officia. Expedita eos dicta ex, et. Maxime odit, eligendi at, atque labore non sed, ab tempora quia nulla animi.</p></div>
+{% endblock %}
+<div class="cc1 container-fluid">
+    <footer>
+        <div class="top-links">
+            <a href="#">Buscar Mascota</a>
+            <a href="#">Proceso Adopcion</a>
+            <a href="#">Informate</a>
+            <a href="#">Donaciones</a>
+            <a href="#">Contacto</a>
+        </div>
+        <small class="fl">Copyright &copy; <a href="#">AdoptaBogota</a></small>
+
+        <small class="fr">Powered by ZumusgrowTeam</small>
+
+    </footer>
+</div>
+
+<style>
+
+    body{
+        background:url({% static "ada/utils/resources/fondo.jpg" %})
+
+    }
+
+
+</style>
+</body>
+</html>

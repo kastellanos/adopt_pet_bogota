@@ -1,0 +1,178 @@
+{% extends "ada/base.html" %}
+
+{% block content %}
+    <div class="container testing">
+        <div class="row">
+            <div class="nombre col-md-12">
+                {{  pet.name_text }}
+            </div>
+
+            <div class="mascota col-md-8 ">
+                <div class="row">
+                    <div class="foto col-md-12">
+                        <img src="{{ MEDIA_URL }}{{ pet.model_pic.url }}" width="200" height="200" alt=""/>
+                    </div>
+                    <div class="description-pet col-md-12">
+                        {{ pet.story_text }}
+                    </div>
+                    <div class="detail-pet col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Atributo</th>
+                                    <th>Descripción</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Edad</td>
+                                    <td>{{ pet.age_text }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Tamaño</td>
+                                    <td>{{ pet.size_text }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Sexo</td>
+                                    <td>{{ pet.sex_text }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Raza</td>
+                                    <td>{{ pet.breed_text }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Color</td>
+                                    <td>{{ pet.color_text }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Esta esterilizado o costrado?</td>
+                                    <td>{{ pet.info_text}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-general col-md-4">
+                <div class="detalles-anuncio">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Detalles del anuncio</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ID Anuncio</td>
+                                <td>{{ pet.id }}</td>
+                            </tr>
+                            <tr>
+                                <td>Tamaño</td>
+                                <td>Debbie</td>
+                            </tr>
+                            <tr>
+                                <td>Sexo</td>
+                                <td>John</td>
+                            </tr>
+                            <tr>
+                                <td>Fecha Publicación</td>
+                                <td>{{ pet.pub_date }}</td>
+                            </tr>
+                            <tr>
+                                <td>Visitas</td>
+                                <td> {% load my_tags %}
+                                    {% contador request %}</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="detalles-refugio">
+                    <div class="detalles-anuncio">
+                        <div class="table-responsive">
+                            <table data-toggle="table" class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Refugio</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Refugio Bogotapi</td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td>info@adoptabogota.com</td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail alternativo</td>
+                                    <td>adoptabogota@gmail.com</td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="form-group  adopt-btn">
+
+                        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#ventana1">
+                            Adoptar
+                        </button>
+                    </div>
+                    <div class="modal fade" id="ventana1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Contactanos</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="contact_form" action="#" method="post">
+                                        <ul>
+
+                                            <li>
+                                                <label for="name">Nombre:</label>
+                                                <input type="text"  placeholder="Johan Ricardo" required />
+                                            </li>
+                                            <li>
+                                                <label for="email">Email:</label>
+                                                <input type="email" name="email" placeholder="jricardo@ejemplo.com" required />
+                                            </li>
+                                            <li>
+                                                <label for="website">Localidad:</label>
+                                                <input type="url" name="web" placeholder="Chapinero" required />
+                                            </li>
+                                            <li>
+                                                <label for="Mensaje">Mensaje:</label>
+                                                <textarea name="Mensaje" cols="40" rows="6" required ></textarea>
+                                            </li>
+                                            <li>
+                                                <button class="submit" type="submit">Enviar</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

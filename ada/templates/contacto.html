@@ -1,0 +1,54 @@
+{% extends "ada/base.html" %}
+
+{% block content %}
+    <div class="container testing">
+
+<form class="contact_form" action="#" method="post">
+                                        <ul>
+
+                                            <li>
+                                                <label for="name">Nombre:</label>
+                                                <input type="text"  placeholder="Johan Ricardo" required />
+                                            </li>
+                                            <li>
+                                                <label for="email">Email:</label>
+                                                <input type="email" name="email" placeholder="jricardo@ejemplo.com" required />
+                                            </li>
+                                            <li>
+                                                <label for="website">Localidad:</label>
+                                                <input type="url" name="web" placeholder="Chapinero" required />
+                                            </li>
+                                            <li>
+                                                <label for="Mensaje">Mensaje:</label>
+                                                <textarea name="Mensaje" cols="40" rows="6" required ></textarea>
+                                            </li>
+                                            <li>
+                                                <button class="submit" type="submit">Enviar</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+        <h4>Nuestra información de contacto:</h4>
+        <section>
+            E-mail:
+            <br/>
+            blablabla@un.co
+            <br/>
+            Phone:
+            <br/>
+            1-412-23544
+            <br/>
+            Dirección:
+            <br/>
+            Cr 45 N 43 - 22
+            <br/>
+        </section>
+ <address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address> 
+    </div>
+
+{% endblock %}
