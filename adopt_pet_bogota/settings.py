@@ -25,7 +25,7 @@ SECRET_KEY = 'bvmi^-5l1n%rw+chxwv_j2=9z86wn%a%8#nq(aqlj2=_i(@x=d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 
 
