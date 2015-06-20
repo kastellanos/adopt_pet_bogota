@@ -26,5 +26,9 @@ class ProcessInfoView(generic.ListView):
     def get_queryset(self):
         return Article.objects.all().filter(theme="proceso")
 
-
+class AyudaView(generic.ListView):
+    template_name = 'ada/ayuda.html'
+    context_object_name = 'lista'
+    def get_queryset(self):
+        return Article.objects.all().filter(theme="ayuda")
 
