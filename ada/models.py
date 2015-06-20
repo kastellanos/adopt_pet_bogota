@@ -3,6 +3,9 @@ from django.utils import timezone
 # Create your models here.
 from datetime import datetime
 
+from django.conf import settings
+
+
 class Pet(models.Model):
     name_text = models.CharField(max_length=200)
     breed_text = models.CharField(max_length=100)
